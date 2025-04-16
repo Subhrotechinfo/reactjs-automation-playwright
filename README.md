@@ -47,7 +47,7 @@ These instructions will get you a copy of the project up and running on your loc
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/Subhrotechinfo/reactjs-automation-playwright.git
 ```
 
 Go to the project directory
