@@ -1,0 +1,145 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "react-basic-app-functionality;given-a-user-logged-in-into-the-application",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Given a user logged in into the application",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 994324098
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "User logged in into the application",
+            "match": {
+              "location": "tests/steps/homepage.step.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2569735039
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "User should land in the home page",
+            "match": {
+              "location": "tests/steps/homepage.step.js:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2072945435
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "User should be able to see his account number",
+            "match": {
+              "location": "tests/steps/homepage.step.js:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2124392376
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 334719610
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "react-basic-app-functionality;given-a-user-logged-in-into-the-application-he-should-be-able-to-navigate-to-the-accounts-sections",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Given a user logged in into the application he should be able to navigate to the accounts sections",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1947075072
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 13,
+            "name": "User logged in into the application",
+            "match": {
+              "location": "tests/steps/homepage.step.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2975078254
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "User clicks on Transaction",
+            "match": {
+              "location": "tests/steps/homepage.step.js:55"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3267889442
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "user should be able to view all the transaction",
+            "match": {
+              "location": "tests/steps/homepage.step.js:65"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2003700872
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 319220764
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "react-basic-app-functionality",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "React Basic App Functionality",
+    "tags": [],
+    "uri": "tests/features/homepage.feature"
+  }
+]
