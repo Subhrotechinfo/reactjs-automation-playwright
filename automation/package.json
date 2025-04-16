@@ -1,0 +1,21 @@
+{
+  "name": "automation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test:e2e": "npx playwright test",
+    "allure:report": "allure serve allure-results"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.2.0",
+    "@cucumber/messages": "^27.2.0",
+    "@playwright/test": "^1.51.1",
+    "@types/node": "^22.14.1",
+    "allure-cucumberjs": "^3.2.1",
+    "allure-playwright": "^3.2.1"
+  }
+}
