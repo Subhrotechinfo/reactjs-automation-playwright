@@ -109,10 +109,7 @@ To view allure report, chech the terminal if the bowser does not open up automat
 ## Viewing Cucumber Report
 
 To view cucumber report, once we run `npx cucumber-js` this should generate the `cucumber-report.html` file in the root directory of the `automation` folder.
-
-```bash
-http://127.0.0.1:dynamic-port-number
-```
+Try opening the `cucumber-report.html` in the browser.
 
 ## Documentation
 
