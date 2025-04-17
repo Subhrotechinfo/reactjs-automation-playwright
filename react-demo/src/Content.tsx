@@ -2,7 +2,7 @@ const Content = () => {
   return (
     <>
       <div className="container" style={{ height: "90vh" }}>
-        <div className="row">
+        <div className="row m-2">
           <div className="col-xxl-12">
             <div className="card" style={{ width: "80rem" }}>
               <div className="card-body">

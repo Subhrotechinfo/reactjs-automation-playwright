@@ -63,14 +63,35 @@ When("User clicks on Transaction", async function () {
 });
 
 Then("user should be able to view all the transaction", async function () {
-  // await page.locator("data-testid=account-number");
-  // await expect(page.getByTitle("account-number")).toHaveText(
-  //   "Account Number 65535132688"
-  // );
-  // await expect(page.getByTitle("account-number")).toContainText(
-  //   "Account Number 65535132688"
-  // );
+  const tableBody = await page.locator(`table#transaction-data tbody`);
+  const count = await tableBody.locator("tr").count();
+  if (count > 15) {
+    console.log("Count the rows*************", count, "***************");
+  } else {
+    console.log("The table count is equal to", count);
+  }
   await page.waitForTimeout(2000);
+});
+
+When("User should land in the transaction page", async function () {
+  await page.waitForTimeout(1000);
+
+  await page.getByTestId("transaction-link").click();
+  await page.waitForTimeout(2000);
+});
+
+Then(
+  "User should be able to click on the button to launch the modal",
+  async function () {
+    await page.waitForTimeout(2000);
+    await page.getByTestId("button-modal").click();
+    await page.waitForTimeout(3000);
+  }
+);
+Then("User should be able to close the modal box also", async function () {
+  await page.waitForTimeout(1000);
+  await page.getByTestId("modal-close-button").click();
+  await page.waitForTimeout(3000);
 });
 
 After(async function () {

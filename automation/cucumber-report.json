@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 994324098
+              "duration": 1175346217
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2569735039
+              "duration": 2714305507
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2072945435
+              "duration": 2084968683
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2124392376
+              "duration": 2086340039
             }
           },
           {
@@ -61,7 +61,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 334719610
+              "duration": 463314856
             }
           }
         ],
@@ -80,7 +80,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1947075072
+              "duration": 1195052412
             }
           },
           {
@@ -93,7 +93,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2975078254
+              "duration": 2914953503
             }
           },
           {
@@ -106,7 +106,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3267889442
+              "duration": 3117585576
             }
           },
           {
@@ -119,7 +119,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2003700872
+              "duration": 2013424273
             }
           },
           {
@@ -127,7 +127,152 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 319220764
+              "duration": 321717253
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "react-basic-app-functionality;given-a-user-logged-in-into-the-application-he-should-be-able-to-click-on-the-modal-in-the-transaction-page",
+        "keyword": "Scenario",
+        "line": 19,
+        "name": "Given a user logged in into the application he should be able to click on the modal in the transaction page",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1454539080
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 21,
+            "name": "User logged in into the application",
+            "match": {
+              "location": "tests/steps/homepage.step.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2761473207
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 23,
+            "name": "User should land in the transaction page",
+            "match": {
+              "location": "tests/steps/homepage.step.js:76"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3143462385
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "User should be able to click on the button to launch the modal",
+            "match": {
+              "location": "tests/steps/homepage.step.js:83"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5109958747
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 314108123
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "react-basic-app-functionality;given-a-user-logged-in-into-the-application-he-should-be-able-to-navigate-to-the-accounts-sections",
+        "keyword": "Scenario",
+        "line": 27,
+        "name": "Given a user logged in into the application he should be able to navigate to the accounts sections",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1233587671
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 29,
+            "name": "User logged in into the application",
+            "match": {
+              "location": "tests/steps/homepage.step.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2837444240
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 31,
+            "name": "User clicks on Transaction",
+            "match": {
+              "location": "tests/steps/homepage.step.js:55"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3178484559
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 33,
+            "name": "User should be able to click on the button to launch the modal",
+            "match": {
+              "location": "tests/steps/homepage.step.js:83"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5077743134
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 35,
+            "name": "User should be able to close the modal box also",
+            "match": {
+              "location": "tests/steps/homepage.step.js:91"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4073844929
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 397037098
             }
           }
         ],
