@@ -24,7 +24,7 @@ This is an example repository demonstrating Automation Testing in Reactjs using 
 
 Make sure you have installed all of the following prerequisites on your development machine:
 
-This project requires Node.js (18 and higher) and NPM.
+This project requires Node.js (18 and higher), NPM and Allure Report.
 
 [Node](http://nodejs.org/) and [NPM](https://npmjs.org/) are really easy to install.
 To make sure you have them available on your machine,
@@ -34,6 +34,23 @@ try running the following command.
 $ npm -v && node -v
 10.9.0
 v20.17.0
+```
+
+[Allure Report](https://allurereport.org/) is really easy to install.
+
+**Windows Install** :  [Allure Report](https://allurereport.org/docs/install-for-windows/)  (Make sure Java version 8 or above is installed on your system.)
+
+**MacOS Install** :  [Allure Report](https://allurereport.org/docs/install-for-macos/)
+
+**Linux Install** :  [Allure Report](https://allurereport.org/docs/install-for-linux/)
+
+
+To make sure you have them available on your machine,
+try running the following command.
+
+```sh
+$ allure --version
+2.33.0
 ```
 
 ## Getting Started
