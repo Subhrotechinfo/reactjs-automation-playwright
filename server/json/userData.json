@@ -1,0 +1,20 @@
+[
+  {
+    "Id": "User001",
+    "UserName": "Benny Johnson",
+    "email": "Benny.Johnson@gmail.com",
+    "password": "$2b$10$ebDa8R7EPFzs3Cq5uqq3iOJfuMsdoVbm9EGphkuhoOj4/gcoAmrXK"
+  },
+  {
+    "Id": "User002",
+    "UserName": "Dave Miller",
+    "email": "Dave.Miller@gmail.com",
+    "password": "$2b$10$ebDa8R7EPFzs3Cq5uqq3iOJfuMsdoVbm9EGphkuhoOj4/gcoAmrXK"
+  },
+  {
+    "Id": "User003",
+    "UserName": "Ted Williams",
+    "email": "Ted.Williams@gmail.com",
+    "password": "$2b$10$ebDa8R7EPFzs3Cq5uqq3iOJfuMsdoVbm9EGphkuhoOj4/gcoAmrXK"
+  }
+]
