@@ -18,6 +18,8 @@ This is an example repository demonstrating Automation Testing in Reactjs using 
 
 [![Open Source](https://img.shields.io/badge/Open_Source-Contribution-green.svg)](https://opensource.com/)
 
+[![Behavior Driven Development](https://img.shields.io/badge/Behaviour-Driven-Development-green.svg)](https://cucumber.io/docs/bdd/)
+
 ## Prerequisites
 
 Make sure you have installed all of the following prerequisites on your development machine:
