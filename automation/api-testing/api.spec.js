@@ -2,14 +2,13 @@
 import { test, expect } from "@playwright/test";
 
 test("it should be able to test the api for transaction list after successfully logged in", async ({
-  page,
   request,
 }) => {
   const loginParams = {
     email: "Benny.Johnson@gmail.com",
     password: "DefaultUser@123",
   };
-  const loginUrl = "http://localhost:5001/login";
+  const loginUrl = "http://localhost:5001/api/login";
   const loginRequest = await request.post(loginUrl, {
     data: loginParams,
   });
@@ -30,7 +29,7 @@ test("it should be able to test the api for transaction list after successfully 
     "x-auth-token": jwt,
   };
   //make the api call
-  const transactionUrl = "http://localhost:5001/transaction-list";
+  const transactionUrl = "http://localhost:5001/api/transaction-list";
   const response = await request.post(transactionUrl, {
     headers: headers,
   });
@@ -111,4 +110,41 @@ test("it should be able to test the api for transaction list after successfully 
   //once status 200 received make the assertion
   const responseText = JSON.parse(await response.text());
   await expect(responseText).toEqual(resp);
+});
+
+test("it should expect error if the user enters invalid credentials", async ({
+  request,
+}) => {
+  const loginParams = {
+    email: "Benny.Johnson@gmail.com",
+    password: "DefaultUserxs@123",
+  };
+  const loginUrl = "http://localhost:5001/api/login";
+  const loginRequest = await request.post(loginUrl, {
+    data: loginParams,
+  });
+  const errorCode = await loginRequest.status();
+  if (errorCode == 400) {
+    expect(errorCode).toBe(400);
+    const errorResponse = JSON.parse(await loginRequest.text());
+    console.log("*********** ErrorResponse ***********", errorResponse);
+    if (errorResponse) {
+      await expect(errorResponse.hasOwnProperty("key")).toBeTruthy();
+      if (errorResponse["key"] == "email") {
+        await expect(errorResponse["key"]).toEqual("email");
+        await expect(errorResponse["error"]).toBeTruthy();
+        const errorMsg = errorResponse["error"];
+        await expect(errorMsg).toBe(
+          "The email address you entered isn't connected to an account."
+        );
+      } else {
+        await expect(errorResponse["key"]).toEqual("password");
+        await expect(errorResponse["error"]).toBeTruthy();
+        const errorMsg = errorResponse["error"];
+        await expect(errorMsg).toBe(
+          "The password that you've entered is incorrect"
+        );
+      }
+    }
+  }
 });

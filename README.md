@@ -113,6 +113,26 @@ To view allure report, chech the terminal if the bowser does not open up automat
 To view cucumber report, once we run `npx cucumber-js` this should generate the `cucumber-report.html` file in the root directory of the `automation` folder.
 Try opening the `cucumber-report.html` in the browser.
 
+### Running the API Testing
+
+- Run the Backend Server
+
+```sh
+$ npm run dev
+```
+
+- Run the Frontend Repo
+
+```sh
+$ npm run dev
+```
+
+- Run the API test cases either in the terminal or by using the UI.
+
+```sh
+$ npx playwright test --ui or $ npx playwright test
+```
+
 ## Documentation
 
 - The automation `folder` should consist of two folders `features` and `steps` folder.
@@ -128,6 +148,18 @@ Try opening the `cucumber-report.html` in the browser.
 
 - Create steps file for each feature file.
 - Naming convention `featureName.step.js`
+
+### Step 3
+
+- Write `API test` cases using `playwright`.
+- There are 2 `folders` inside the automation `folder` `api-testing` & `ui-test`.
+
+### Step 4
+
+- To write `API test` cases write test cases inside `api-testing` .
+- To write `API Testing with UI` write the test cases inside `ui-test`.
+
+`Note: Your Projects may have different structure.`
 
 ## Authors
 

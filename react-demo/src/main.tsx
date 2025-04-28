@@ -6,6 +6,11 @@ import App from "./App.tsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Transaction } from "./Transaction.tsx";
 import Content from "./Content.tsx";
+import { Login } from "./Login.tsx";
+import { CookiesProvider } from "react-cookie";
+import { Provider } from "react-redux";
+import store from "./store/index.jsx";
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -18,10 +23,18 @@ const router = createBrowserRouter([
       },
     ],
   },
+  {
+    path: "/signin",
+    element: <Login />,
+  },
 ]);
 
 createRoot(document.getElementById("root")!).render(
-  <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>
+  <CookiesProvider defaultSetOptions={{ path: "/" }}>
+    <Provider store={store}>
+      <React.StrictMode>
+        <RouterProvider router={router} />
+      </React.StrictMode>
+    </Provider>
+  </CookiesProvider>
 );

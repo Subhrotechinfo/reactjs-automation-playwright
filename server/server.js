@@ -11,9 +11,9 @@ app.get("/", async (req, res) => {
   res.send("Health check");
 });
 
-app.post("/login", loginController);
+app.post("/api/login", loginController);
 
-app.post("/transaction-list", auth, async (req, res) => {
+app.post("/api/transaction-list", auth, async (req, res) => {
   const data = tableMockData;
   res.status(200).json(data);
 });
@@ -24,8 +24,6 @@ app.post("/hash-password", async (req, res) => {
   const hash = await bcrypt.hash(req.body.password, salt);
   res.json({ hash, password: req.body.password });
 });
-
-app.post("/logout", logoutController);
 
 app.listen(5001, () => {
   console.log("Server is up and running in 5001");
