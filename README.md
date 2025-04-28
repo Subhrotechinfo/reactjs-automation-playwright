@@ -156,8 +156,8 @@ $ npx playwright test --ui or $ npx playwright test
 
 ### Step 4
 
-- To write `API test` cases write test cases inside `api-testing` .
-- To write `API Testing with UI` write the test cases inside `ui-test`.
+- To write `API test cases` write inside `api-testing` .
+- To write `API Test cases with UI` write the test cases inside `ui-test`.
 
 `Note: Your Projects may have different structure.`
 
